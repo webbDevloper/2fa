@@ -11,7 +11,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="navbar-brand fw-bold fs-4">
             {/* <span className="brand-icon">◆</span> */}
-            <span className="brand-text">Identa.Ai</span>
+            <span className="brand-text">2FA</span>
           </div>
           <button className="navbar-toggler" type="button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span className="navbar-toggler-icon"></span>
