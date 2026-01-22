@@ -1,4 +1,4 @@
-"use client"
+  "use client"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import Header from "./components/Header"
@@ -14,9 +14,9 @@ export default function App() {
     <main className="identa-main">
       <Header />
       <Hero />
-      {/* <Stats /> */}
+      <Stats />
       {/* <Features /> */}
-      {/* <VideoSection /> */}
+      <VideoSection />
       {/* <CTA /> */}
       {/* <Footer /> */}
     </main>
