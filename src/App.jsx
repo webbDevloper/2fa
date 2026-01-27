@@ -15,10 +15,10 @@ export default function App() {
       <Header />
       <Hero />
       <Stats />
-      {/* <Features /> */}
+      <Features />
       <VideoSection />
       {/* <CTA /> */}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   )
 }
