@@ -30,13 +30,13 @@ export default function Features() {
       icon: <FaBrain size={28} className="text-warning" />,
       category: "Advanced Authentication",
     },
-    {
-      title: "Impossible Travel Detection",
-      description:
-        "Physics-Based Security. Detects if a user logs in from New York and then London 5 minutes later, flagging the account immediately.",
-      icon: <FaGlobeAmericas size={28} className="text-info" />,
-      category: "Threat Defense",
-    },
+    // {
+    //   title: "Impossible Travel Detection",
+    //   description:
+    //     "Physics-Based Security. Detects if a user logs in from New York and then London 5 minutes later, flagging the account immediately.",
+    //   icon: <FaGlobeAmericas size={28} className="text-info" />,
+    //   category: "Threat Defense",
+    // },
     {
       title: "Geo-Fencing & Country Blocking",
       description:
@@ -44,13 +44,13 @@ export default function Features() {
       icon: <FaBan size={28} className="text-danger" />,
       category: "Threat Defense",
     },
-    {
-      title: "Live Session Kill Switch",
-      description:
-        "Total Control. Admins can view every logged-in user and remotely revoke sessions instantly if a device is lost or stolen.",
-      icon: <FaCogs size={28} className="text-secondary" />,
-      category: "Administrative Control",
-    },
+    // {
+    //   title: "Live Session Kill Switch",
+    //   description:
+    //     "Total Control. Admins can view every logged-in user and remotely revoke sessions instantly if a device is lost or stolen.",
+    //   icon: <FaCogs size={28} className="text-secondary" />,
+    //   category: "Administrative Control",
+    // },
   ];
 
   return (

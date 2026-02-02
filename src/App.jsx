@@ -17,7 +17,7 @@ export default function App() {
       <Stats />
       <Features />
       <VideoSection />
-      {/* <CTA /> */}
+      <CTA />
       <Footer />
     </main>
   )

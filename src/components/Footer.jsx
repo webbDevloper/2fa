@@ -9,7 +9,7 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="col-md-4">
-            <h5 className="footer-title">Identa.Ai</h5>
+            <h5 className="footer-title">2FA</h5>
             <p className="footer-text">
               Enterprise authentication platform with military-grade security.
             </p>
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="row align-items-center">
           <div className="col-md-12 text-center">
             <p className="footer-copyright mb-0">
-              © 2026 Identa.Ai. All rights reserved.
+              © 2026 2FA. All rights reserved.
             </p>
           </div>
         </div>
