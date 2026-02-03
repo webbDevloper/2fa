@@ -1,15 +1,37 @@
 export default function CTA() {
+  const whatsappNumber = "9911700247" // ← replace with your WhatsApp number
+  const message = "Hi, I want to start a free trial for 2FA."
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`
+
   return (
     <section className="cta-section py-5" id="contact">
       <div className="container">
         <div className="cta-content text-center">
+
           <h2 className="cta-title">Ready to Secure Your Enterprise?</h2>
-          <p className="cta-subtitle">Join 50+ enterprise clients protecting millions of users with Identa.Ai</p>
+
+          <p className="cta-subtitle">
+            Start your journey with a modern 2FA solution built for speed, security, and scale.
+          </p>
+
           <div className="cta-buttons">
-            <button className="btn btn-primary btn-lg me-3">Start Free Trial</button>
-            {/* <button className="btn btn-outline btn-lg">Schedule Demo</button> */}
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-success btn-lg me-3"
+            >
+              Get Free Trial on WhatsApp
+            </a>
           </div>
-          <p className="cta-footnote mt-4">✓ No credit card required • ✓ 14-day free trial • ✓ Full feature access</p>
+
+          <p className="cta-footnote mt-4">
+            ✓ No credit card required • ✓ 14-day free trial • ✓ Full feature access
+          </p>
+
         </div>
       </div>
     </section>
