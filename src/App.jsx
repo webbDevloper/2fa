@@ -8,6 +8,7 @@ import VideoSection from "./components/VideoSection"
 import Stats from "./components/Stats"
 import CTA from "./components/CTA"
 import Footer from "./components/Footer"
+import Security from "./components/Security"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Stats />
       <Features />
       <VideoSection />
+      <Security />
       <CTA />
       <Footer />
     </main>

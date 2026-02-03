@@ -1,5 +1,5 @@
 export default function CTA() {
-  const whatsappNumber = "9911700247" // ← replace with your WhatsApp number
+  const whatsappNumber = "9311108002" // ← replace with your WhatsApp number
   const message = "Hi, I want to start a free trial for 2FA."
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(

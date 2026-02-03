@@ -6,22 +6,24 @@ export default function Hero() {
       <div className="container mt-0">
         <div className="row align-items-center min-vh-100">
 
+          {/* LEFT CONTENT */}
           <div className="col-lg-6 hero-content">
             <div className="badge-section mb-4">
-              <span className="badge-text">Enterprise Authentication</span>
+              <span className="badge-text">Identity & Access Management</span>
             </div>
 
-            <h1 className="hero-title" style={{color:"#0b2494"}}>
-              Security That Moves as Fast as You Do
-            </h1>
+            <h3 className="hero-title" style={{ color: "#0b2494" }}>
+              Protect Every Login. Secure Every Application.
+            </h3>
 
             <p className="hero-subtitle">
-              A unified authentication platform combining military-grade biometric
-              security with frictionless user experience and real-time threat
-              intelligence.
+              Secure your web applications with Conditional Access, multi-tier
+              authentication, and modern identity protocols like SAML 2.0 and
+              OAuth 2.0 — all powered by AI-driven risk analysis and face
+              recognition.
             </p>
 
-            <div className="hero-buttons">
+            <div className="hero-buttons mt-4">
               <button className="btn btn-primary btn-lg btn-get-started me-3">
                 Start Free Trial
               </button>
@@ -31,6 +33,7 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* RIGHT VISUAL */}
           <div className="col-lg-6 hero-visual">
             <div className="hero-image-container">
 
@@ -39,7 +42,7 @@ export default function Hero() {
                   <FaLock size={28} className="text-primary" />
                 </div>
                 <div className="card-text">
-                  Military-Grade Security
+                  Conditional Access & Secure Authentication
                 </div>
               </div>
 
@@ -48,7 +51,7 @@ export default function Hero() {
                   <FaBolt size={28} className="text-warning" />
                 </div>
                 <div className="card-text">
-                  Lightning Fast
+                  Fast & Seamless SAML / OAuth Integration
                 </div>
               </div>
 
@@ -57,7 +60,7 @@ export default function Hero() {
                   <FaShieldAlt size={28} className="text-success" />
                 </div>
                 <div className="card-text">
-                  Real-time Protection
+                  AI Risk Analysis & Face Recognition Security
                 </div>
               </div>
 

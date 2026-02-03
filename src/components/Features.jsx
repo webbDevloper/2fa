@@ -10,83 +10,109 @@ import {
 export default function Features() {
   const features = [
     {
-      title: "Biometric Face Verification",
+      title: "Conditional Access Protection",
       description:
-        "Login with a Selfie. Users verify their identity using their camera, ensuring the person logging in is actually the authorized user.",
-      icon: <FaUserShield size={28} className="text-primary" />,
-      category: "Advanced Authentication",
+        "Protect web applications using intelligent conditional access policies based on user role, device posture, location, and real-time risk signals.",
+      icon: <FaUserShield size={26} />,
+      category: "Access Control",
+      color: "primary",
     },
     {
-      title: "Push Notification 2FA",
+      title: "Multi-Tier User Verification",
       description:
-        "One-Tap Access. Forget typing 6-digit codes. Users receive a secure push notification and tap Approve to login instantly.",
-      icon: <FaBell size={28} className="text-success" />,
-      category: "Advanced Authentication",
+        "Verify users through layered authentication including passwords, push approvals, biometrics, and contextual risk evaluation.",
+      icon: <FaBell size={26} />,
+      category: "Authentication",
+      color: "success",
     },
     {
-      title: "Adaptive Risk Engine",
+      title: "Modern Identity Provider (IdP)",
       description:
-        "Smart Security. The system analyzes IP, location, and device headers in real-time, blocking high-risk attempts silently.",
-      icon: <FaBrain size={28} className="text-warning" />,
-      category: "Advanced Authentication",
+        "Centralized Identity Provider supporting SAML 2.0 and OAuth 2.0 for secure and seamless cloud and on-prem integration.",
+      icon: <FaBrain size={26} />,
+      category: "Identity Management",
+      color: "warning",
     },
-    // {
-    //   title: "Impossible Travel Detection",
-    //   description:
-    //     "Physics-Based Security. Detects if a user logs in from New York and then London 5 minutes later, flagging the account immediately.",
-    //   icon: <FaGlobeAmericas size={28} className="text-info" />,
-    //   category: "Threat Defense",
-    // },
     {
-      title: "Geo-Fencing & Country Blocking",
+      title: "Office 365 Access Control",
       description:
-        "Border Control for Data. Administrators can instantly block traffic from specific high-risk countries to reduce attack surface.",
-      icon: <FaBan size={28} className="text-danger" />,
-      category: "Threat Defense",
+        "Enforce role-based and location-aware access for Office 365, allowing secure remote access only for authorized users.",
+      icon: <FaGlobeAmericas size={26} />,
+      category: "Cloud Security",
+      color: "info",
     },
-    // {
-    //   title: "Live Session Kill Switch",
-    //   description:
-    //     "Total Control. Admins can view every logged-in user and remotely revoke sessions instantly if a device is lost or stolen.",
-    //   icon: <FaCogs size={28} className="text-secondary" />,
-    //   category: "Administrative Control",
-    // },
+    {
+      title: "Universal Application Protection",
+      description:
+        "Secure HRMS, ERP, Office Portals, and custom web applications that support SAML or OAuth authentication standards.",
+      icon: <FaBan size={26} />,
+      category: "Application Security",
+      color: "danger",
+    },
+    {
+      title: "Active Directory & LDAP Integration",
+      description:
+        "Seamlessly integrate with existing on-premise Active Directory or LDAP without user migration or duplication.",
+      icon: <FaCogs size={26} />,
+      category: "Directory Integration",
+      color: "secondary",
+    },
+    {
+      title: "AI Face Recognition & Risk Analysis",
+      description:
+        "Military-grade security powered by facial recognition and AI-based risk analysis to block anomalous access in real time.",
+      icon: <FaUserShield size={26} />,
+      category: "Advanced Security",
+      color: "dark",
+    },
   ];
 
   return (
-    <section className="features-section py-5" id="features">
+    <section className="features-section py-5 bg-light" id="features">
       <div className="container">
-        <div className="section-header text-center mb-5">
-          <h2 className="section-title">
-            Powerful Features for Enterprise Security
+        {/* Header */}
+        <div className="text-center mb-5">
+          <h2 className="fw-bold mb-3">
+            Enterprise-Grade Identity Security
           </h2>
-          <p className="section-subtitle">
-            Everything you need to protect your users and meet compliance requirements
+          <p className="text-muted mx-auto" style={{ maxWidth: "720px" }}>
+            A unified Identity and Access Management platform designed to secure
+            users, applications, and infrastructure at scale.
           </p>
         </div>
 
+        {/* Feature Cards */}
         <div className="row g-4">
           {features.map((feature, idx) => (
             <div key={idx} className="col-md-6 col-lg-4">
-              <div className="feature-card text-center h-100">
-
-                {/* Centered Icon */}
-                <div className="feature-icon d-flex align-items-center justify-content-center mb-3">
-                  {feature.icon}
+              <div
+                className="card h-100 border-0 shadow-sm p-4 text-center"
+                style={{ transition: "transform 0.3s ease, box-shadow 0.3s ease" }}
+              >
+                {/* Icon */}
+                <div
+                  className={`mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-${feature.color} bg-opacity-10`}
+                  style={{ width: 56, height: 56 }}
+                >
+                  <span className={`text-${feature.color}`}>
+                    {feature.icon}
+                  </span>
                 </div>
 
-                <div className="feature-category text-muted mb-2">
+                {/* Category */}
+                <div className="text-uppercase text-muted small fw-semibold mb-2">
                   {feature.category}
                 </div>
 
-                <h3 className="feature-title">
+                {/* Title */}
+                <h5 className="fw-bold mb-3">
                   {feature.title}
-                </h3>
+                </h5>
 
-                <p className="feature-description">
+                {/* Description */}
+                <p className="text-muted mb-0">
                   {feature.description}
                 </p>
-
               </div>
             </div>
           ))}
