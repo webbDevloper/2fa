@@ -1,11 +1,12 @@
 import { FaLock, FaBolt, FaShieldAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
     <section className="hero-section">
       <div className="container mt-0">
         <div className="row align-items-center min-vh-100">
-
+          
           {/* LEFT CONTENT */}
           <div className="col-lg-6 hero-content">
             <div className="badge-section mb-4">
@@ -24,19 +25,25 @@ export default function Hero() {
             </p>
 
             <div className="hero-buttons mt-4">
-              <button className="btn btn-primary btn-lg btn-get-started me-3">
-                Start Free Trial
-              </button>
-              <button className="btn btn-outline btn-lg">
+              <Link to="/pricing" className="btn btn-outline btn-lg">
+                Pricing
+              </Link>
+
+              {/* WhatsApp Demo Button */}
+              <a
+                href="https://wa.me/9311108002?text=Hi,%20I%20want%20to%20watch%20a%20demo%20of%20your%202FA%20solution"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline btn-lg"
+              >
                 Watch Demo
-              </button>
+              </a>
             </div>
           </div>
 
           {/* RIGHT VISUAL */}
           <div className="col-lg-6 hero-visual">
             <div className="hero-image-container">
-
               <div className="floating-card card-1">
                 <div className="card-icon">
                   <FaLock size={28} className="text-primary" />
@@ -63,7 +70,6 @@ export default function Hero() {
                   AI Risk Analysis & Face Recognition Security
                 </div>
               </div>
-
             </div>
           </div>
 
