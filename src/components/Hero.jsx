@@ -31,7 +31,7 @@ export default function Hero() {
 
               {/* WhatsApp Demo Button */}
               <a
-                href="https://wa.me/9311108002?text=Hi,%20I%20want%20to%20watch%20a%20demo%20of%20your%202FA%20solution"
+                href="https://wa.me/9311108002?text=Hi,%20I%20want%20to%20watch%20a%20demo%20of%20your%20UniLogin%20solution"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline btn-lg"

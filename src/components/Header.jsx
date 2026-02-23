@@ -18,7 +18,7 @@ export default function Header() {
 
           {/* Brand */}
           <a className="navbar-brand fw-bold fs-4 text-white" href="#">
-            2FA
+            UniLogin
           </a>
 
           {/* React Icon Hamburger */}

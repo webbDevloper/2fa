@@ -1,6 +1,6 @@
 export default function CTA() {
   const whatsappNumber = "9311108002" // ← replace with your WhatsApp number
-  const message = "Hi, I want to start a free trial for 2FA."
+  const message = "Hi, I want to start a free trial for UniLoginLogin."
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
@@ -14,7 +14,7 @@ export default function CTA() {
           <h2 className="cta-title">Ready to Secure Your Enterprise?</h2>
 
           <p className="cta-subtitle">
-            Start your journey with a modern 2FA solution built for speed, security, and scale.
+            Start your journey with a modern UniLoginLoginLogin solution built for speed, security, and scale.
           </p>
 
           <div className="cta-buttons">
