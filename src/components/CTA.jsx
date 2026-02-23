@@ -14,7 +14,7 @@ export default function CTA() {
           <h2 className="cta-title">Ready to Secure Your Enterprise?</h2>
 
           <p className="cta-subtitle">
-            Start your journey with a modern UniLoginLoginLogin solution built for speed, security, and scale.
+            Start your journey with a modern UniLogin solution built for speed, security, and scale.
           </p>
 
           <div className="cta-buttons">

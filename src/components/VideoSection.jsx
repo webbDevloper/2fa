@@ -22,7 +22,7 @@ export default function HowItWorks() {
 
           {/* RIGHT SIDE – STEPS */}
           <div className="col-lg-6">
-            <h2 className="mb-4">How UniLoginLogin Works</h2>
+            <h2 className="mb-4">How UniLogin Works</h2>
 
             <div className="step d-flex mb-4">
               <FaUserCheck size={32} className="text-primary me-3" />
